@@ -34,7 +34,7 @@ export class PortfolioComponent {
     },
     {
       id: 'juanrebolledo.com',
-      url: '../../assets/images/portfolios/portfolio1.png',
+      url: '../../assets/images/portfolios/portfolio3.png',
       title: 'portafolio para ingeniero',
       desc: 'portafolio de presentación para ingeniero ambiental a la medida',
       languages: [
@@ -47,14 +47,14 @@ export class PortfolioComponent {
     },
     {
       id: 'mvportfolio',
-      url: '../../assets/images/portfolios/portfolio1.png',
+      url: '../../assets/images/portfolios/portfolio4.png',
       title: 'portafolio de presentación',
       desc: 'portafolio de personal desarrollado en angular y almacenado en github',
       languages: [
         {name:'angular', clname:'fa-brands fa-angular bg-[#a32d14] mb-3 text-moon-whitenew'},
       ],
       githuburl:{
-        url:'https://portfoliomichaelvalero.vercel.app/',
+        url:'https://github.com/mavalero010/portfoliomichael',
         cls:"fa-brands fa-github"
       }
     }

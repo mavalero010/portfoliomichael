@@ -1,0 +1,90 @@
+<div id="portfolio" class="flex justify-start items-center h-screen">
+
+<div class="h-full flex flex-col justify-center w-full">
+  <h1 class="capitalize text-moon-marinebluelight text-5xl pb-6 px-10">portafolio</h1>
+
+  <div
+    class="flex items-center relative h-1/2 w-full text-white px-10 "
+  >
+
+  <button
+  *ngIf="portfolios.length > 5"
+  class="absolute left-0 transform -translate-y-1/2 bg-gray-800 rounded-full p-2 text-white hover:bg-gray-700 transition duration-300 ease-in-out"
+  (click)="slideLeft()"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M15 19l-7-7 7-7"
+    />
+  </svg>
+</button>
+    <div #carousel class="overflow-x-auto whitespace-nowrap ml-6">
+      <div
+        *ngFor="let portfolio of portfolios"
+        #{{portfolio.id}}
+        class="inline-block mr-4 h-full border-[1px] border-moon-textlight w-72 bg-moon-primary rounded-md"
+      > 
+      
+        <img [src]="portfolio.url" alt="Image" class="mx-auto h-32 w-full rounded-ss-md rounded-se-md mb-3" />
+        <div class="px-2">
+            <p class="uppercase font-bold overflow-hidden whitespace-normal mb-3 mt-2 text-moon-pink">{{portfolio.title}}</p>
+            <p class="capitalize overflow-hidden whitespace-normal mb-3">{{portfolio.desc}}</p>
+            <div #{{portfolio.id}}tags  class="flex flex-wrap items-center justify-center mb-3">
+              <div *ngFor="let language of portfolio.languages" >
+                <i
+                
+                   #{{language.name}}{{portfolio.id}}
+                   
+                    class="{{language.clname}} {{language.name}}{{portfolio.id}} px-2 py-1 mr-2 rounded-lg"
+                  >
+                  <span class="ml-2 capitalize">{{language.name}}</span>
+                  </i
+                >
+              </div>
+            </div>
+            <div class="flex justify-center mb-3">
+                <a href="https://www.linkedindin.com/in/michael-andres-valero-polo-a3a07721b/" 
+                target="_blank"
+                class="pr-4"
+                  ><i
+                    class="fa-brands fa-github text-moon-marineblue text-3xl transition duration-300 ease-in-out transform hover:scale-105"
+                  ></i
+                ></a>  
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      (click)="slideRight()"
+      *ngIf="portfolios.length > 5"
+      class="absolute right-0 transform -translate-y-1/2 bg-gray-800 rounded-full p-2 text-white hover:bg-gray-700 transition duration-300 ease-in-out"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+  
+</div>

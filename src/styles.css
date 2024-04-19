@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body, * {
+  user-select: none;
+  font-family: 'PixelPanel';
+  background-color:'black'
+}
+@layer base {
+    @font-face {
+      font-family: 'Mem';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(./assets/fonts/Mem/mem-mono-3x3.ttf) format('truetype'),
+      url(./assets/fonts/Mem/mem-mono-4x4.ttf) format('truetype'),
+      url(./assets/fonts/Mem/mem-prop-3x5.ttf) format('truetype'),
+      url(./assets/fonts/Mem/mem-prop-4x4.ttf) format('truetype'),
+      url(./assets/fonts/Mem/mem-prop-5x5.ttf) format('truetype'),
+      url(./assets/fonts/Mem/mem-prop-5x6.ttf) format('truetype')
+      ;
+    }
+
+    @font-face {
+        font-family: 'PixelPanel';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-Black.ttf) format('truetype'),
+             url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-Bold.ttf) format('truetype'),
+              url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-ExtraBold.ttf) format('truetype'),
+              url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-ExtraLight.ttf) format('truetype'),
+              url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-Light.ttf) format('truetype'),
+              url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-Medium.ttf) format('truetype'),
+              url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-Regular.ttf) format('truetype'),
+              url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-SemiBold.ttf) format('truetype'),
+              url(./assets/fonts/Pixel_Panel/ttf/PixelPanel-Thin.ttf) format('truetype'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-Black.woff2) format('woff2'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-Bold.woff2) format('woff2'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-ExtraBold.woff2) format('woff2'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-ExtraLight.woff2) format('woff2'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-Light.woff2) format('woff2'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-Medium.woff2) format('woff2'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-Regular.woff2) format('woff2'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-SemiBold.woff2) format('woff2'),
+              url(./assets/fonts/Pixel_Panel/webfonts/PixelPanel-Thin.woff2) format('woff2'),
+
+
+        ;
+      }
+  }

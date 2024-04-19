@@ -1,0 +1,103 @@
+<div #menu
+  class="h-full bg-moon-primary w-full flex items-center justify-center border-r border-moon-textlight"
+>
+  <div class="flex flex-col items-center justify-between h-1/2 ounded-lg ">
+    <img [src]="profilephoto" class="w-1/2" alt="Photo">
+    <ul class="flex flex-col items-center">
+      <!--<li>
+        <button *ngFor="let item of menucomponents"
+        (click)="scrollToSection(item[0])"
+        class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
+      >
+        <span [id]="item[1]"
+          class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+          >{{item[0].replace("#","")}}</span
+        >
+      
+      </button>
+      </li>!-->
+
+      
+      <li>
+        <button
+          (click)="scrollToSection('#profile')"
+          class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
+        >
+          <span id="titleprofile"
+            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            >home</span
+          >
+        
+        </button>
+      </li>
+      <li>
+        <button
+        (click)="scrollToSection('#aboutme')"
+          class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
+        >
+          <span id="titleaboutme"
+            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            >about me</span
+          >
+      </button>
+      </li>
+      <li>
+        <button
+        (click)="scrollToSection('#portfolio')"
+          class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
+        >
+          <span
+          id="titleportfolio"
+            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            >portfolio</span
+          >
+          <span
+            class="absolute top-0 left-0 w-full h-full bg-white opacity-50 transform scale-0 origin-top-left transition-all duration-300 hover:scale-150"
+          ></span>
+        </button>
+      </li>
+      <li>
+        <button
+        (click)="scrollToSection('#education')"
+          class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
+        >
+          <span
+          id="titleeducation"
+            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            >education</span
+          >
+        </button>
+      </li>
+      <li>
+        <button
+        (click)="scrollToSection('#skills')"
+          class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
+        >
+          <span
+          id="titleskills"
+            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            >skills</span
+          >
+          <span
+            class="absolute top-0 left-0 w-full h-full bg-white opacity-50 transform scale-0 origin-top-left transition-all duration-300 hover:scale-150"
+          ></span>
+        </button>
+      </li>
+      <li>
+        <button
+        (click)="scrollToSection('#contactme')"
+          class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
+        >
+          <span
+          id="titlecontactme"
+            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            >contact me</span
+          >
+          <span
+            class="absolute top-0 left-0 w-full h-full bg-white opacity-50 transform scale-0 origin-top-left transition-all duration-300 hover:scale-150"
+          ></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

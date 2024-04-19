@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+ #container-menu{
+  display:none
+ }   
+ #container-info{
+  width: 100%;
+ }
+}

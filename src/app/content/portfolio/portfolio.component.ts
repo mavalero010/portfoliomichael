@@ -49,7 +49,7 @@ export class PortfolioComponent {
       id: 'mvportfolio',
       url: '../../assets/images/portfolios/portfolio4.png',
       title: 'portafolio de presentación',
-      desc: 'portafolio de personal desarrollado en angular y almacenado en github',
+      desc: 'portafolio personal desarrollado en angular y almacenado en github',
       languages: [
         {name:'angular', clname:'fa-brands fa-angular bg-[#a32d14] mb-3 text-moon-whitenew'},
       ],

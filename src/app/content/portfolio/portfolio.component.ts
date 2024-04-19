@@ -13,53 +13,52 @@ export class PortfolioComponent {
       id: 'UNTUTOR',
       url: '../../assets/images/portfolios/portfolio1.png',
       title: 'unTutor',
-      desc: 'servicio backend para aplicación mobile de tutorías',
+      desc: 'servicio backend para aplicación móvil de tutorías académicas',
       languages: [
-        {name:'html', clname:'fa-brands fa-html5 bg-[#AA4C38] mb-3'},
-        {name:'nodejs', clname:'fa-brands fa-js bg-[#FFD43B] mb-3 text-moon-primary'},
+        {name:'nodejs', clname:'fa-brands fa-js bg-moon-success mb-3 text-moon-primary'},
+        {name:'mongodb', clname:'fa-solid fa-database bg-[#AA4C38] mb-3'},
+        {name:'aws s3', clname:'fa-solid fa-bucket bg-[#AA4C38] mb-3'},
       ],
+      githuburl:{url:'https://github.com/mavalero010/untutor-backend',
+      cls:"fa-brands fa-github"
+    }
     },
     {
       id: 'SOPHOS',
       url: '../../assets/images/portfolios/portfolio2.png',
       title: 'sophos backend',
       desc: 'servicio backend para matrícula y registro de materias',
-      languages: [{name:'java', clname:'fa-brands fa-java bg-[#d07206] mb-3 text-moon-primary'}]
+      languages: [{name:'java', clname:'fa-brands fa-java bg-[#d07206] mb-3 text-moon-primary'}],
+      githuburl:{url:'https://github.com/mavalero010/Unisophos',
+    cls:"fa-brands fa-github"
+    }
     },
     {
-      id: 'UNTUTOR',
+      id: 'juanrebolledo.com',
       url: '../../assets/images/portfolios/portfolio1.png',
-      title: 'unTutor',
-      desc: 'servicio backend para aplicación mobile de tutorías',
+      title: 'portafolio de presentación',
+      desc: 'portafolio de presentación para ingeniero ambiental a la medida',
       languages: [
-        {name:'html', clname:'fa-brands fa-html5 bg-[#AA4C38] mb-3'},
-        {name:'nodejs', clname:'fa-brands fa-js bg-[#FFD43B] mb-3 text-moon-primary'},
+        {name:'wordpress', clname:'fa-brands fa-wordpress bg-[#9cb6e2] mb-3 text-moon-primary'},
       ],
+      githuburl:{
+        url:'https://juanrebolledo.com/',
+        cls:"fa-solid fa-link"
+      }
     },
     {
-      id: 'SOPHOS',
-      url: '../../assets/images/portfolios/portfolio2.png',
-      title: 'sophos backend',
-      desc: 'servicio backend para matrícula y registro de materias',
-      languages: [{name:'java', clname:'fa-brands fa-java bg-[#d07206] mb-3 text-moon-primary'}]
-    },
-    {
-      id: 'UNTUTOR',
+      id: 'mvportfolio',
       url: '../../assets/images/portfolios/portfolio1.png',
-      title: 'unTutor',
-      desc: 'servicio backend para aplicación mobile de tutorías',
+      title: 'portafolio de presentación',
+      desc: 'portafolio de personal desarrollado en angular y almacenado en github',
       languages: [
-        {name:'html', clname:'fa-brands fa-html5 bg-[#AA4C38] mb-3'},
-        {name:'nodejs', clname:'fa-brands fa-js bg-[#FFD43B] mb-3 text-moon-primary'},
+        {name:'angular', clname:'fa-brands fa-angular bg-[#9cb6e2] mb-3 text-moon-primary'},
       ],
-    },
-    {
-      id: 'SOPHOS',
-      url: '../../assets/images/portfolios/portfolio2.png',
-      title: 'sophos backend',
-      desc: 'servicio backend para matrícula y registro de materias',
-      languages: [{name:'java', clname:'fa-brands fa-java bg-[#d07206] mb-3 text-moon-primary'}]
-    },
+      githuburl:{
+        url:'https://portfoliomichaelvalero.vercel.app/',
+        cls:"fa-brands fa-github"
+      }
+    }
   ];
 
   slideRight() {

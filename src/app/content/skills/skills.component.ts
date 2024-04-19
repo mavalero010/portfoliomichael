@@ -14,6 +14,8 @@ export class SkillsComponent {
       {name:'html', clname:'fa-brands fa-html5 bg-[#AA4C38] mr-3'},
       {name:'python', clname:'fa-brands fa-python bg-[#07395f] mb-r text-moon-textlightselected'},
       {name:'css', clname:'fa-brands fa-css3 bg-[#1a4fa3] mb-r text-moon-whitenew'},
+      {name:'wordpress', clname:'fa-brands fa-wordpress bg-[#9cb6e2] mb-r text-moon-primary'},
+
     ]
     
     frameworks = [

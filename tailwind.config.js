@@ -20,7 +20,8 @@ module.exports = {
           'whitenew':'#e3d5af',
           'success':"#0ac228",
           'secondsuccess':'#149129',
-          'red':'#ef4444'
+          'red':'#ef4444',
+          'gray':'#CFBF9D'
         }
       }
 

@@ -1,30 +1,18 @@
 <div #menu
   class="h-full bg-moon-primary w-full flex items-center justify-center border-r border-moon-textlight"
 >
-  <div class="flex flex-col items-center justify-between h-1/2 ounded-lg ">
-    <img [src]="profilephoto" class="w-1/2" alt="Photo">
-    <ul class="flex flex-col items-center">
-      <!--<li>
-        <button *ngFor="let item of menucomponents"
-        (click)="scrollToSection(item[0])"
-        class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
-      >
-        <span [id]="item[1]"
-          class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
-          >{{item[0].replace("#","")}}</span
-        >
-      
-      </button>
-      </li>!-->
+  <div class="flex flex-col items-center justify-between h-full ounded-lg  py-3">
+    <h1 class="mt-6 uppercase text-moon-gray font-Mem  w-1/2 text-center">Michael Valero</h1>
+    <ul class="flex flex-col items-center ">
+      <img [src]="profilephoto" class="w-1/2 mb-6" alt="Photo">
 
-      
       <li>
         <button
           (click)="scrollToSection('#profile')"
           class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
         >
           <span id="titleprofile"
-            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            class="uppercase text-moon-gray font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
             >home</span
           >
         
@@ -36,7 +24,7 @@
           class="relative inline-block overflow-hidden rounded-md transform transition-transform duration-300 hover:scale-110"
         >
           <span id="titleaboutme"
-            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            class="uppercase text-moon-gray font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
             >about me</span
           >
       </button>
@@ -48,7 +36,7 @@
         >
           <span
           id="titleportfolio"
-            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            class="uppercase text-moon-gray font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
             >portfolio</span
           >
           <span
@@ -63,7 +51,7 @@
         >
           <span
           id="titleeducation"
-            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            class="uppercase text-moon-gray font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
             >education</span
           >
         </button>
@@ -75,7 +63,7 @@
         >
           <span
           id="titleskills"
-            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            class="uppercase text-moon-gray font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
             >skills</span
           >
           <span
@@ -90,7 +78,7 @@
         >
           <span
           id="titlecontactme"
-            class="uppercase text-moon-textlight font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
+            class="uppercase text-moon-gray font-Primary font-bold bg-clip-text hover:bg-transparent hover:underline hover:text-moon-textlightselected transition-all duration-300"
             >contact me</span
           >
           <span
@@ -99,5 +87,19 @@
         </button>
       </li>
     </ul>
+
+    <div
+    class="flex justify-center"
+    >
+      <a 
+      *ngFor="let s of socialmedia"
+      href="{{s.href}}" 
+      target="_blank"
+      class=""
+        ><i
+          class="{{s.cls}} text-xl transition duration-300 ease-in-out transform hover:scale-105 mx-2"
+        ></i
+      ></a>          
+    </div>
   </div>
 </div>

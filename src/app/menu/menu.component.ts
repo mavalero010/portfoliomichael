@@ -17,6 +17,12 @@ export class MenuComponent {
   @Input() vis: string = 'moon';
   visibility: string = 'moon';
   landingelement: ElementRef;
+  socialmedia = [
+    {href:"https://www.linkedin.com/in/michael-andres-valero-polo-a3a07721b/",cls:"fa-brands fa-linkedin text-moon-marineblue"},
+    {href:"https://web.whatsapp.com/send?phone=+573216759967&text=Te%20contrato%20ya%20😅",cls:"fa-brands fa-whatsapp text-moon-success"},
+    {href:"https://github.com/mavalero010",cls:"fa-brands fa-github text-moon-gray"},
+
+  ]
   landingcomponents = [
     '#profile',
     '#contactme',
@@ -59,13 +65,13 @@ export class MenuComponent {
   }
  
   pressMenu(id: string) {
-    this.menuelement.nativeElement.querySelector(id).classList.remove('text-moon-textlight','hover:text-moon-textlightselected');
+    this.menuelement.nativeElement.querySelector(id).classList.remove('text-moon-gray','hover:text-moon-textlightselected');
     this.menuelement.nativeElement.querySelector(id).classList.add('text-moon-marineblue','hover:text-moon-marinebluelight');
   }
 
   unPressMenu(id: string) {
     this.menuelement.nativeElement.querySelector(id).classList.remove('text-moon-marineblue','hover:text-moon-marinebluelight');
-    this.menuelement.nativeElement.querySelector(id).classList.add('text-moon-textlight','hover:text-moon-textlightselected');
+    this.menuelement.nativeElement.querySelector(id).classList.add('text-moon-gray','hover:text-moon-textlightselected');
   }
 
 

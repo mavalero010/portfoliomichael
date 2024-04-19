@@ -8,7 +8,7 @@
   >
 
   <button
-  *ngIf="portfolios.length > 5"
+  *ngIf="portfolios.length >= 4"
   class="absolute left-0 transform -translate-y-1/2 bg-gray-800 rounded-full p-2 text-white hover:bg-gray-700 transition duration-300 ease-in-out"
   (click)="slideLeft()"
 >
@@ -38,8 +38,10 @@
         <div class="px-2">
             <p class="uppercase font-bold overflow-hidden whitespace-normal mb-3 mt-2 text-moon-pink">{{portfolio.title}}</p>
             <p class="capitalize overflow-hidden whitespace-normal mb-3">{{portfolio.desc}}</p>
-            <div #{{portfolio.id}}tags  class="flex flex-wrap items-center justify-center mb-3">
-              <div *ngFor="let language of portfolio.languages" >
+            <div #{{portfolio.id}}tags  class="flex flex-wrap items-center justify-center mb-3 w-full">
+              <div *ngFor="let language of portfolio.languages" 
+
+              >
                 <i
                 
                    #{{language.name}}{{portfolio.id}}
@@ -52,11 +54,11 @@
               </div>
             </div>
             <div class="flex justify-center mb-3">
-                <a href="https://www.linkedindin.com/in/michael-andres-valero-polo-a3a07721b/" 
+                <a href="{{portfolio.githuburl.url}}" 
                 target="_blank"
                 class="pr-4"
                   ><i
-                    class="fa-brands fa-github text-moon-marineblue text-3xl transition duration-300 ease-in-out transform hover:scale-105"
+                    class="{{portfolio.githuburl.cls}} text-moon-marineblue text-3xl transition duration-300 ease-in-out transform hover:scale-105"
                   ></i
                 ></a>  
             </div>
@@ -66,7 +68,7 @@
 
     <button
       (click)="slideRight()"
-      *ngIf="portfolios.length > 5"
+      *ngIf="portfolios.length >= 4"
       class="absolute right-0 transform -translate-y-1/2 bg-gray-800 rounded-full p-2 text-white hover:bg-gray-700 transition duration-300 ease-in-out"
     >
       <svg

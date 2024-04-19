@@ -1,17 +1,18 @@
-<div id="education" class="flex justify-start items-center h-screen">
-    <div class="flex flex-col justify-center h-1/2 w-full px-10 text-white">
-        <h1 class="capitalize text-moon-textlightselected text-5xl pb-6">education</h1>
+<div id="education" class="flex flex-col items-start pt-60">
+    <h1 class="capitalize text-moon-textlightselected text-5xl pb-6 px-10">education</h1>
+    <div class="flex flex-col justify-center grid grid-cols-2 h-1/2 w-full px-10 text-white ">
         <div 
         *ngFor="let educationItem of educationItems"
+        class="mt-6"
         >
-            <div class="flex items-center justify-between w-3/4 mb-3">
-                <p class="capitalize text-moon-marinebluelight text-2xl">egresado en ingeniería de sistemas</p>
-                <p class="capitalize text-moon-secondsuccess">agosto 2023 - diciembre 2023</p>
-    
-            </div>
-            <p class="mb-3">universidad del norte</p>
-            <p class="mb-3">m</p>
+            <p class="capitalize text-moon-marinebluelight text-xl mb-2">{{educationItem.field}}</p>
+            <p class="capitalize text-moon-secondsuccess text-xs mb-2">{{educationItem.date}}</p>
+            <p class="capitalize mb-2 text-xs">{{educationItem.info}}</p>
+            <p class="capitalize mb-3 text-xs opacity-50">{{educationItem.time}}</p>
             <a href="{{educationItem.url}}" target="_blank" class="capitalize bg-moon-secondsuccess px-3 hover:bg-moon-success text-moon-primary transition duration-300 ease-in-out transform hover:scale-105 py-2 ">certificado</a>
         </div>
+        
     </div>
+
 </div>
+

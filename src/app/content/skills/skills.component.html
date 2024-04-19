@@ -1,3 +1,30 @@
-<div id="skills" class="flex justify-start items-center h-screen">
-    <div class="flex flex-col justify-center h-1/2 w-full border text-white">Skills</div>
+<div id="skills" class="flex justify-start items-center h-screen pt-50">
+  <div class="flex flex-col justify-center h-1/2 w-full text-white">
+    <h1 class="capitalize px-10 text-moon-red text-5xl pb-6">habilidades</h1>
+    <div class="px-10">
+      <p class="uppercase text-moon-marineblue">lenguajes de programación</p>
+      <div class="inline-block mb-3" *ngFor="let language of languages">
+        <i class="{{ language.clname }} {{ language.name }} px-2 py-1 mr-2">
+          <span class="ml-2 capitalize">{{ language.name }}</span>
+        </i>
+      </div>
+      <p class="uppercase text-moon-marineblue">frameworks y librerías</p>
+      <div class="inline-block mb-3" *ngFor="let framework of frameworks">
+        <i class="{{ framework.clname }} {{ framework.name }} px-2 py-1 mr-2">
+          <span class="ml-2 capitalize">{{ framework.name }}</span>
+        </i>
+      </div>
+      <p class="uppercase text-moon-marineblue">software y herramientas</p>
+      <div class="inline-block mb-3" *ngFor="let tool of tools">
+          <p class="{{ tool.clname }} {{ tool.name }} mr-2 px-2 uppercase">{{ tool.name }}</p>
+     
+      </div>
+      <p class="uppercase text-moon-marineblue">aprendiendo: </p>
+      <div class="" *ngFor="let l of learning">
+        <i class="fa-solid fa-check px-2 py-1 text-moon-whitenew opacity-70">
+          <span class="ml-2 capitalize">{{ l.name }}</span>
+        </i>
+      </div>
+    </div>
+  </div>
 </div>

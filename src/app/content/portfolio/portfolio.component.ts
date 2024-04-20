@@ -12,7 +12,7 @@ export class PortfolioComponent {
     {
       id: 'UNTUTOR',
       url: '../../assets/images/portfolios/portfolio1.png',
-      title: 'unTutor',
+      title: 'unTutor backend',
       desc: 'servicio backend para aplicación móvil de tutorías académicas',
       languages: [
         {name:'nodejs', clname:'fa-brands fa-js bg-moon-success mb-3 text-moon-primary'},

@@ -6,8 +6,8 @@ import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [
   {path:'',component: LandingComponent},
-  {path:'projects/untutor',component: UntutorComponent},
-  {path:'projects/unisophos',component: UnisophosComponent},
+  //{path:'projects/untutor',component: UntutorComponent},
+  //{path:'projects/unisophos',component: UnisophosComponent},
   //{path:'contactform',component: ContactformComponent},
   {path:'**',redirectTo:"", pathMatch:"full"},
 ];;

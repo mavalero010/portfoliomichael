@@ -10,6 +10,35 @@ export class PortfolioComponent {
   currentIndex = 0;
   portfolios = [
     {
+      id: 'Mekanicapp',
+      url: '../../assets/images/portfolios/portfolio0.png',
+      title: 'mekanicapp',
+      desc: 'aplicación para cálculos de rodamientos dirigido a ing. mecánicos',
+      languages: [
+        {name:'flutter', clname:'fa-brands fa-flutter bg-moon-marinebluelight mb-3 text-moon-primary'},
+        {name:'firebase', clname:'fa-solid fa-database bg-[#AA4C38] mb-3'},
+      ],
+      githuburl:{
+        url:'https://play.google.com/store/apps/details?id=com.virtualtec.mecanicapp',
+        cls:"fa-solid fa-link"
+      }
+    },
+    {
+      id: 'FindMe',
+      url: '../../assets/images/portfolios/findmelogo.png',
+      title: 'findMe',
+      desc: 'aplicación para reconocimiento de rostros mediante rec facial',
+      languages: [
+        {name:'flutter', clname:'fa-brands fa-flutter bg-moon-marinebluelight mb-3 text-moon-primary'},
+        {name:'firebase', clname:'fa-solid fa-database bg-[#AA4C38] mb-3'},
+        {name:'nodejs', clname:'fa-brands fa-js bg-moon-success mb-3 text-moon-primary'},
+      ],
+      githuburl:{
+        url:'https://play.google.com/store/apps/details?id=com.virtualtec.mecanicapp',
+       // cls:"fa-solid fa-link"
+      }
+    },
+    {
       id: 'UNTUTOR',
       url: '../../assets/images/portfolios/portfolio1.png',
       title: 'unTutor backend',
